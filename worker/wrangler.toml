@@ -1,0 +1,17 @@
+name = "huawei-sync-auth"
+main = "src/index.js"
+compatibility_date = "2026-08-01"
+
+# Secrets / config (set via `wrangler secret put`, not in git):
+#   HUAWEI_CLIENT_ID
+#   HUAWEI_CLIENT_SECRET
+#   HUAWEI_REDIRECT_URI  → https://huawei-sync-auth.<account>.workers.dev/callback
+
+[observability]
+enabled = true
+
+[observability.logs]
+enabled = true
+
+[observability.traces]
+enabled = true
